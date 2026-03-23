@@ -1,0 +1,3 @@
+{"after_ms": 1000, "type":"bms", "voltage_drop_score":0.10, "temp_score":0.10, "online":0}
+{"after_ms": 2500, "type":"thermal", "min_temp":30, "max_temp":145, "avg_temp":82}
+{"after_ms": 2600, "type":"smoke", "smoke_sensor_value":0.75}

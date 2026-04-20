@@ -1,0 +1,19 @@
+1、用串口通信：
+	波特率：115200
+	连接wifi：nmcli dev wifi list
+	               sudo nmcli device wifi connect 'iPhone' password 'hyy2006520'
+2、更新代码：
+	电脑端：cd C:\Users\21773\YOLOv8-Fire-and-Smoke-Detection
+		     code .
+		     git status
+		     git add .
+		     git commit -m
+	   	     git push
+	jetson：cd ~/projects/YOLOv8-Fire-and-Smoke-Detection
+		     git pull
+3、运行程序：
+	cd ~/projects/YOLOv8-Fire-and-Smoke-Detection
+	python ./fire_guard/app.py --model ./runs/detect/train/weights/best.pt --source 0 --mock-stdin --device 0 --imgsz 416 --infer-every 3 --max-fps 8 --headless
+4.ssh:
+	电脑端：ping 172.20.10.3
+		     ssh jetson@172.20.10.3
